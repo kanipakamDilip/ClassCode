@@ -47,7 +47,7 @@
                 </td>
             </tr>
             <tr>
-                <td><label for="fc">Choose your favorite color:</label></td>
+                <td><label for="fc">Favorite color:</label></td>
                 <td><input type="color" id="fc" name="fc"></td>
             </tr>
             <tr>
@@ -55,19 +55,17 @@
                 <td><input type="date" id="dob" name="dob"></td>
             </tr>
             <tr>
-                <td><label for="datamax">Enter a date before 1980-01-01:</label></td>
+                <td><label for="datamax">Date before 1980:</label></td>
                 <td><input type="date" id="datamax" name="datamax" max="1979-12-31"></td>
             </tr>
             <tr>
-                <td><label for="datemin">Enter a date after 2000-01-01:</label></td>
+                <td><label for="datemin">Date after 2000:</label></td>
                 <td><input type="date" id="datemin" name="datamin" min="2000-01-02"></td>
             </tr>
             <tr>
                 <td><label for="dnt">Date and Time:</label></td>
                 <td><input type="datetime-local" id="dnt" name="dnt"></td>
             </tr>
-            
-            <!-- Month and Year Selection -->
             <tr>
                 <td><label>Select Month & Year:</label></td>
                 <td>
@@ -97,39 +95,59 @@
                     </select>
                 </td>
             </tr>
-
             <tr>
                 <td><label for="file">File Upload:</label></td>
                 <td><input type="file" id="file" name="file"></td>
             </tr>
-
-            <!-- Hidden Field -->
+            <tr>
+                <td><label for="age">Enter your age:</label></td>
+                <td><input type="number" id="age" name="age" min="18" max="80"></td>
+            </tr>
+            <tr>
+                <td><label for="country">Country:</label></td>
+                <td>
+                    <select name="country" id="country">
+                        <option value="India">India</option>
+                        <option value="USA">USA</option>
+                        <option value="UAE">UAE</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="phone">Phone Number:</label></td>
+                <td>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{5}-[0-9]{5}" placeholder="12345-67890">
+                </td>
+            </tr>
+            <!-- Hidden field -->
             <tr>
                 <td colspan="2">
                     <input type="hidden" name="form_id" value="userForm123">
                 </td>
             </tr>
             <tr>
-                <td><label>Enter the age :</label></td>
-                <td><input type="number" name="age" min="18" max="80"></td>
-            </tr>
-            <br>
-            <td>
-                <tr>
-                <select>
-                    <option>India</option>
-                    <option>USA</option>
-                    <option>UAE</option>
-                </select>
-            </td>
-        </tr>
+    <td><label for="device">Select your digital device:</label></td>
+    <td>
+        <select name="device" id="device">
+            <option value="">-- Select a brand --</option>
+            <option value="Dell">Dell</option>
+            <option value="HP">HP</option>
+            <option value="Lenovo">Lenovo</option>
+            <option value="Asus">Asus</option>
+            <option value="Acer">Acer</option>
+            <option value="Apple">Apple (MacBook)</option>
+            <option value="MSI">MSI</option>
+            <option value="Samsung">Samsung</option>
+        </select>
+    </td>
+</tr>
+
             <tr>
                 <td colspan="2" style="text-align: center;">
                     <input type="submit" value="Submit">
                     <input type="reset" value="Reset">
                 </td>
             </tr>
-            
         </table>
     </form>
 </body>
